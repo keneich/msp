@@ -1,0 +1,59 @@
+[
+
+  
+    {
+      "title"			: "ansible을 이용한 자동화",
+      "link"			: "http://localhost:4000/project/ansible-auto-check/",
+      "excerpt"		: "자동화 방법을 알아보자"
+    }
+  
+
+  
+    ,{
+      "title"			: "centos 에서 firewalld 사용",
+      "link"			: "http://localhost:4000/project/centos-firewalld/",
+      "excerpt"		: "firewalld의 사용법을 알아본다."
+    }
+  
+
+  
+    ,{
+      "title"			: "Porcelain, Plumbing이 무슨 뜻이지?",
+      "link"			: "http://localhost:4000/articles/What-do-porcelain-and-plumbing-mean-in-Git-kor/",
+      "excerpt"		: "Git 문서에 담겨있는 정체불명의 단어들"
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "About",
+      "link"			: "http://localhost:4000/about/",
+      "excerpt"		: "블로그의 목적 및 나에 대해.."
+    }
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+]

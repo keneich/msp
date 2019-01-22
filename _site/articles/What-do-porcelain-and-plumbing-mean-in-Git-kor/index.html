@@ -1,0 +1,220 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Porcelain, Plumbing이 무슨 뜻이지? &#8211; MSP tech Blog</title>
+<meta name="description" content="Git 문서에 담겨있는 정체불명의 단어들">
+<meta name="keywords" content="git, english">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Porcelain, Plumbing이 무슨 뜻이지?">
+<meta name="twitter:description" content="Git 문서에 담겨있는 정체불명의 단어들">
+<meta name="twitter:site" content="@gabia">
+<meta name="twitter:creator" content="@gabia">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/logo2.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Porcelain, Plumbing이 무슨 뜻이지?">
+<meta property="og:description" content="Git 문서에 담겨있는 정체불명의 단어들">
+<meta property="og:url" content="http://localhost:4000/articles/What-do-porcelain-and-plumbing-mean-in-Git-kor/">
+<meta property="og:site_name" content="MSP tech Blog">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/articles/What-do-porcelain-and-plumbing-mean-in-Git-kor/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="MSP tech Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/project/" >Project</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/articles/" >Articles</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://localhost:4000/" class="site-logo" rel="home" title="MSP tech Blog"><img src="http://localhost:4000/images/logo2.png" width="200" height="200" alt="MSP tech Blog logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">MSP tech Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">글쓰기 - 제대로 쓰려 말고, 무조건 써라 (-제임서 서버)</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://localhost:4000/tags/#git" title="Pages tagged git">git</a></li><li><a href="http://localhost:4000/tags/#english" title="Pages tagged english">english</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Porcelain, Plumbing이 무슨 뜻이지?</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://localhost:4000/images/nathan.png" class="bio-photo" alt="gabia-Nathan bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">gabia-Nathan</span></span>
+        <span class="entry-date date published"><time datetime="2019-01-11T01:03:05+09:00"><i class="fa fa-calendar-o"></i> January 11, 2019</time></span>
+        <span class="entry-date date modified"><time datetime="2019-01-10 16:03:05 +0000"><i class="fa fa-pencil"></i> January 10, 2019</time></span>
+        
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=git,english&amp;text=Porcelain,%20Plumbing이%20무슨%20뜻이지?&amp;url=http://localhost:4000/articles/What-do-porcelain-and-plumbing-mean-in-Git-kor/&amp;via=gabia" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/What-do-porcelain-and-plumbing-mean-in-Git-kor/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/articles/What-do-porcelain-and-plumbing-mean-in-Git-kor/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>깃의 공식 문서를 영문으로 읽다보면 사전을 봐도 도무지 이해가 안 되는 단어들이 가끔씩 나옵니다. 예를 들어 <code class="highlighter-rouge">git rev-parse</code> 명령어의 문서를 살짝 엿보면 다음과 같이 되어 있습니다.</p>
+
+<blockquote>
+  <p>DESCRIPTION
+Many Git porcelainish commands take mixture of flags (i.e. parameters that begin with a dash -) and parameters meant for the underlying git rev-list command they use internally and flags and parameters for the other commands they use downstream of git rev-list. This command is used to distinguish between them.</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>porcelainish
+</code></pre></div></div>
+
+<p>???</p>
+
+<p>오늘은 사전에도 잘 나오지 않는 이 단어가 무엇인지 알아보겠습니다.</p>
+
+<h2 id="porcelain-plumbing">Porcelain, Plumbing</h2>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+  <li><a href="https://git-scm.com/docs/git-rev-parse">https://git-scm.com/docs/git-rev-parse</a></li>
+  <li><a href="https://stackoverflow.com/questions/6976473/what-does-the-term-porcelain-mean-in-git">https://stackoverflow.com/questions/6976473/what-does-the-term-porcelain-mean-in-git</a></li>
+</ul>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+      
+        <a href="http://localhost:4000/project/centos-firewalld/" class="btn" title="centos 에서 firewalld 사용">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<!--
+<span>&copy; 2019 gabia-Nathan. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+-->
+<span>&copy; 2019 gabia-Nathan. Powered by Jekyll using the So Simple Theme.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/gabia" title="gabia-Nathan on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="https://facebook.com/gabia" title="gabia-Nathan on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	
+  
+	
+ <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
